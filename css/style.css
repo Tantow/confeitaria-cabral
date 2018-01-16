@@ -6,7 +6,6 @@
     padding: 0px;
 }
 
-
 /* menu */
 
 .menu{
@@ -119,16 +118,149 @@
 	max-width: 960px;
     margin: 0px auto;
     padding: 40px;
-}
-
-.footer-container img{
-    max-width: 460px;
-	float: right;
+    
 }
 
 .footer-container p{
     max-width: 460px;
-    float: left;
+    margin: 0 auto;
+    padding: 0px 100px;
 	font-size: 1.125em;
 	font-style: italic;
+}
+
+/*-------------------------------*/
+
+.intro_contato
+{
+
+	padding: 60px 0px;
+	text-align: center;
+	color: white;
+	background: url("../img/contatos_foto.jpg")no-repeat center center;
+	background-size:cover;
+
+}
+.intro_contato h1
+{
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+.intro_contato h1::after
+{
+	content:"";
+	display: block;
+	width: 20px;
+	height: 4px;
+	background: white;
+	margin: 10px auto;
+	transition: 1s;
+}
+
+.intro_contato h1:hover::after
+{
+	width: 300px;
+	transition: 1s;
+}
+
+.intro_contato p
+{
+	font-size: 1.125em;
+	font-style: italic;
+}
+.contato
+{
+	background: #E3F2EE;
+	padding: 60px 0;
+	border-top: 3px solid #d6d3c8;-
+	border-bottom: 3px solid #d6d3c8;
+}
+
+.contato-container
+{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.contato-item
+{
+	width: 430px;  /*nao botou max pq nenhuma tela é menor q 300, mas pode colocar max tb*/
+	float: left;
+	margin: 0 10px;
+}
+
+.contato-container::before,
+.produtos-container::after
+{
+	content:'';
+	display: table;
+	clear:both;
+}
+
+.contato h2
+{
+    text-align: center;
+    font-size: 1.125em;
+    margin-bottom: 30px;
+    color: #252525;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.contato-container1 h2
+{
+margin: -20px auto;
+}
+
+.contato-container1 h2
+{
+padding: 30px 0;
+}
+.contato-container2
+{
+margin-right: 20px; 
+}
+.contato-traço
+{
+	width: 10px;  /*nao botou max pq nenhuma tela é menor q 300, mas pode colocar max tb*/
+	float: center;
+	margin: 0 10px;
+}
+.contato-container2 form
+{
+	float: right;
+	margin: -25px 0;
+}
+.contato-container2 input
+{
+	background: #e7e4d8;
+	margin: 0 40px;
+	padding-left: 10px;
+	border: 3px solid #252525;
+	font-style: italic;
+	font-size: 1.125em;
+	width: 300px;
+	height: 40px;
+}
+
+.contato-container2 button
+{
+	display: block;
+	width: 140px;
+	height: 46px;
+	background: #252525;
+	text-transform: uppercase;
+	border: 3px solid #252525;
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.125em;
+	font-style;
+	text-align: center;
+	padding: 10px 0;
+	margin-left: -40px;
+	float: left;
+	transition: 0.8s;
+	float: right;
 }
